@@ -1,6 +1,7 @@
 # Github styling 
 
 This is a fork from [github-style](https://github.com/MeiK2333/github-style) with some additional features that I made.
+
 This is a fork from [github-style-plus](https://github.com/kurt-liao/github-style-plus) with some additional features that I made.
 
 > In this repo, the documentation only introduce additional features.
@@ -13,7 +14,7 @@ This is a fork from [github-style-plus](https://github.com/kurt-liao/github-styl
 - [X] 投稿ページのタグ一覧を削除
 - [X] 抜粋を最大140字にする
 - [X] Mastodonのアイコンを追加
-- [ ] Google アナリティクスの確認をする
+- [X] Google アナリティクスの確認をする
 - [ ] 固定ページを追加できるようにする
 
 ## Demo
