@@ -1,53 +1,65 @@
-# Github styling 
+# Github Styling for Hugo
 
-This is a fork from [github-style](https://github.com/MeiK2333/github-style) with some additional features that I made.
+A Hugo theme forked from [github-style-plus](https://github.com/kurt-liao/github-style-plus), which was originally forked from [github-style](https://github.com/MeiK2333/github-style). This theme includes several unique enhancements and customizations.
 
-This is a fork from [github-style-plus](https://github.com/kurt-liao/github-style-plus) with some additional features that I made.
+[Live Demo](https://blog.nove-b.dev/)
 
-> In this repo, the documentation only introduce additional features.
-> For more information about basic usage, please follow the original repo.
+## Key Features & Improvements
 
-## Quick guide
+1. **Cleaner Post List View**
+   - Removed tag listings from the post list page
+   - Improves focus on actual content
+   - Compare: [Original with tags](https://meik2333.com//post/) vs [Our clean design](https://blog.nove-b.dev/post/)
 
-### New features in this fork version:
+2. **Smart Content Preview**
+   - Automatically uses the first 140 characters as excerpt when no summary is provided
+   - More consistent post previews without manual configuration
 
-- [X] 投稿ページのタグ一覧を削除
-- [X] 抜粋を最大140字にする
-- [X] Mastodonのアイコンを追加
-- [X] Google アナリティクスの確認をする
-- [ ] 固定ページを追加できるようにする
+3. **Enhanced Social Integration**
+   - Added Mastodon icon to profile links
+   - Expanded social media sharing options
 
-## Demo
+4. **Improved Search Functionality**
+   - Enhanced search performance
+   - Try it yourself: Compare [github-style](https://meik2333.com//) vs [github-styling](https://blog.nove-b.dev/)
 
-First, take a look at my [blog](https://blog.nove-b.dev/), it's the completely demo for this theme.
+## Quick Start
 
-## Usage
-
-### Init hugo site
-
+### 1. Create a New Hugo Site
 ```bash
 hugo new site mysite
 cd mysite
 ```
 
-### Install the theme
-
+### 2. Install the Theme
 ```bash
 git submodule add https://github.com/nove-b/github-styling.git themes/github-styling
 ```
 
-### Update the theme
-
-If you just installed the theme, it is already in the latest version. If not, you can update using the below commands
+### 3. Update the Theme
+If you've just installed the theme, you already have the latest version. To update an existing installation:
 
 ```bash
 cd themes/github-styling
 git pull
 ```
 
-Then, you need to rename the previous `posts` folder to `post`
-
+### 4. Directory Structure Update
+Rename your posts directory to match the theme structure:
 ```bash
-cd <you-project-folder>
+cd <your-project-folder>
 mv content/posts content/post
 ```
+
+## In Progress
+
+- [  ] No issues in progress
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+
+---
+
+For more information and detailed documentation, visit the [demo site](https://blog.nove-b.dev/).
