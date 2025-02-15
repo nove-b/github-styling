@@ -1,6 +1,6 @@
-<script type="application/javascript" src="{{ " js/github-style.js" | absURL }}"></script>
+<script type="application/javascript" src="{{ "js/github-style.js" | absURL }}"></script>
 
-<script src="{{ " js/mark.es6.min.js" | absURL }}"></script>
+<script src="{{ "js/mark.es6.min.js" | absURL }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.1.0"></script>
 
 {{ if and .Site.Params.EnableLocalSearch .Site.Params.Rss }}
@@ -9,6 +9,16 @@
   const host = window.location.host;
   const keyword = localStorage.getItem('keyword');
   localStorage.removeItem('keyword');
+
+  if (keyword) {
+    console.log(keyword)
+    const markInstance = new Mark(document.body);
+    markInstance.unmark({
+      done: function() {
+        markInstance.mark(keyword);
+      }
+    });
+  }
 
   const primaryColor = getComputedStyle(document.documentElement).getPropertyValue('--color-bg-primary');
   const mutedColor = getComputedStyle(document.documentElement).getPropertyValue('--color-fg-muted');
